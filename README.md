@@ -1,4 +1,4 @@
-#### Compilando
+### Compilando
 ```
   arm-elf-gcc -Wall -g -o alo hello.s
   arm-elf-gdb -tui alo
@@ -38,7 +38,7 @@ Move um valor de um registrador(ou uma constante) para um outro registrador
 `LDR r0, [r1], #20`: Carrega o valor da memória na posição r1 no registrador r0, em seguida adiciona 20 em r1
 `STR	r0, [r1, #20]`: Armazena o valor do registrador r0 na posição de memória de r1, em seguida adiciona 20 em r1
 
-### B, CMP, operador S
+#### B, CMP, operador S
 
 `B func`: Descola para a função `func`, caso seja adionado `L`, para retornar usar `MOV pc, lr`
 `CMP r0, r1`: Compara r0 e r1, fazendo `r0 - r1`, e armazenando o "resultado" em cprs
